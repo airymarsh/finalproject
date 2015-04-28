@@ -1,5 +1,4 @@
-In order for you to compile our code, you have to use min gw this, which is input from the command prompt. gcc space-std C99
-another space main.c -o [insert your name here] 
+In order for you to compile our code, you have to use min gw this, which is input from the command prompt. gcc -std=C99 main.c -o "insert your name here" 
 
 In order for someone to compile our program, they just have to enter the correct inputs for each minigame. This game is pretty much mini-
 game based. For the tic-tac-toe game, all you have to do is enter a number and the computer will automatically put an O in the place you
