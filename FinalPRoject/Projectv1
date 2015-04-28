@@ -1,0 +1,139 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string>
+#include <array>
+
+//--Version 1.0-- Denzel Young
+//Adding basic structure for inventory, rooms, etc.
+//Struct "Item" created to represent the various items in the game.
+//Struct "Room" created to represent the rooms in the game
+//Struct "Player" created to represent the hero/heroine
+
+//Items will have a name, a description, and a value.
+//As each value will either help or harm the player's chances of winning, I thought it would be appropriate
+//To place a number on this chance. Items that help have a value of +1, items that harm have a value of -1
+//The pindex represents the value it corresponds to in the player's inventory array.
+//The rindex represents the value it corresponds to in the room inventory (Room inventory will act as a temporary inventory only available in that room)
+struct Item
+{
+	string name;
+	string description;
+	int value;
+	int pindex;
+	int rindex;
+};
+
+//Each room has a description, two booleans determining if the puzzle was solved or failed, two ints showing its place in the map
+//and an inventory. The array will consist of 0s and 1s, acting as a switch. 0 means the player doesn't have that item, 1 means that he/she does.
+struct Room
+{
+	string description;
+	bool success;
+	bool failure;
+	int row;
+	int column;
+	int rinventory[]; //Without knowing how many items, if any, are in each room, this array cannot be created yet.
+
+};
+
+//The player struct, as of now, only has 2 values of interest, the inventory and power.
+//Inventory is an array of ints (1 or 0 switches) that determine what items he/she has based on the pindex in the Item struct.
+//Power is a numerical representation of a pplayer's chance to win. It starts at 0 and goes up or down depending on how well
+//the game is played.
+struct Player
+{
+	int pinventory[]; //The size will be equal to the number of items in the game and consist of 0s and 1s
+	int power;
+};
+
+void gameTime()
+{
+	//The rooms have been created with generic names, including a hub which exists outside of the main map.
+	//THe hub allows us to take the player out of the map matrix and allow them freedom to choose where to go next.
+	struct Room Room1;
+	struct Room Room2;
+	struct Room Room3;
+	struct Room Room4;
+	struct Room Room5;
+	struct Room Room6;
+	struct Room Room7;
+	struct Room Room8;
+	struct Room Room9;
+	struct Room hub;
+	
+	//The map has been set for the rooms.
+	Room map[3][3] = { { Room1, Room2, Room3 }, { Room4, Room5, Room6 }, { Room7, Room8, Room9 } };
+
+	//Each cluster of code creates the room, gives it a description, sets up the success/failure boolean, and gives an integer value
+	//for the row and column that the row is in. Each room will need a for loop setting all items in that room to 0 in the array.
+	strcpy(Room1.description, "Description goes here");
+	Room1.success = false;
+	Room1.failure = false;
+	row = 0;
+	column = 0;
+
+	strcpy(Room2.description, "Description goes here");
+	Room2.success = false;
+	Room2.failure = false;
+	row = 0;
+	column = 1;
+
+	strcpy(Room3.description, "Description goes here");
+	Room3.success = false;
+	Room3.failure = false;
+	row = 0;
+	column = 2;
+
+	strcpy(Room4.description, "Description goes here");
+	Room4.success = false;
+	Room4.failure = false;
+	row = 1;
+	column = 0;
+
+	strcpy(Room5.description, "Description goes here");
+	Room5.success = false;
+	Room5.failure = false;
+	row = 1;
+	column = 1;
+
+	strcpy(Room6.description, "Description goes here");
+	Room6.success = false;
+	Room6.failure = false;
+	row = 1;
+	column = 2;
+
+	strcpy(Room7.description, "Description goes here");
+	Room7.success = false;
+	Room7.failure = false;
+	row = 2;
+	column = 0;
+
+	strcpy(Room8.description, "Description goes here");
+	Room8.success = false;
+	Room8.failure = false;
+	row = 2;
+	column = 1;
+
+	strcpy(Room9.description, "Description goes here");
+	Room2.success = false;
+	Room2.failure = false;
+	row = 2;
+	column = 2;
+
+	strcpy(hub.description, "Description goes here");
+	Room2.success = false;
+	Room2.failure = false;
+	row = -1;
+	column = -1;
+
+	//A for loop is needed here to iterate through the player's "inventory" and set all values to 0.
+	struct Player hero;
+	hero.power = 0;
+
+	/*For the sake of space, a seperate file may be needed to create all of the items and be used as an item library.*/
+}
+
+int main()
+{
+	gameTime();
+}
