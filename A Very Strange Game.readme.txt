@@ -1,0 +1,28 @@
+In order for you to compile our code, you have to use min gw this, which is input from the command prompt. gcc space-std C99
+another space main.c -o [insert your name here] 
+
+In order for someone to compile our program, they just have to enter the correct inputs for each minigame. This game is pretty much mini-
+game based. For the tic-tac-toe game, all you have to do is enter a number and the computer will automatically put an O in the place you
+want it to be in. The computer automatically and randomly puts an X in any spot that does not have an O in it.
+
+The next minigame is the slider puzzle in the bathroom. For the slider puzzle, all you have to do is press L for Left, R for Right, U for Up, and D for Down
+If you press Q, the player automatically quits and gets a crappy item!
+
+The next minigame is in the bedroom and its the personality quiz minigame. Depending on the player's input, you get a good weapon or the best weapon
+
+The next minigame is in the kitchen and its similar to rock, paper, scissors. If you win and enter the correct input, then you get the good weapon, The Buster Sword.
+If you end up in a tie or lose, you get the weaker weapon a Tonberry Knife.
+
+The next minigame is in the dungeon and its a trivia game like Trivia Crack but is actually Trivia on crack, lol. If you win and answer more questions correctly, you get a megaphone.
+If you lose, you get a jack in the box. You see a bunch of questions and you answer the correct input for what you think is the right answer.
+
+After you get your bad or crappy weapons, you fight Dr. Strange!!! Throughout a bunch of if-else statements and switch statements, the correct output will be shown. 
+Like for example, if your hp is less than 1, then you lose the battle! If the hp of Dr. Strange is less than 1, then you have won the boss fight!!!!!
+
+Basically, the game is about a player who is the apprentice of Dr. Strange, the world's most powerful user of algorithmic-based magic. She is the master of computer science and magic
+And she decided to take you under her wing as an apprentice. So basically, she is like a mixture of Dr. Strange and Doctor Doom (A TERRIBLE COMBINATION!!!!!! OHHHH NOOOOO(FAMILY GUY VOICE))
+Sooner or later you learn that Dr. Strange really plans to kill you and possess you and absorb your lifeforce so you can keep on living. After the boss fight, there is a quicktime event. A button mashing event.
+You have to ward off the evil spirit of Dr. Strange right after you killed her. The world is safe for now.........From Dr. Strange.
+.....OR IS IT?!?!? DUN DUN DUN!!!!!!!!!!!! The player has to navigate throughout the wacky mingames and gain items that will either help defeat Dr. Strange very quickly or not very quickly. C is very good at memory managment.
+It memorizes everything that is until we ran into a few bugs, glitches, and errors. Anyway, after Dr. Strange is dead, she tried to possess the player, as a result, the player absorbs her powers and becomes 
+the next Pythoness of Python, Conjurer of C#, Jinn of Java, etc, etc. The Player basically becomes the next Computer Scientist Sorceress Supreme!!!!!!!!!!!!!
